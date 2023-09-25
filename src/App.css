@@ -1,38 +1,69 @@
+/* .App {
+  display: flex;
+  flex-direction: row;
+  top: 10vh;
+} */
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 30%;
+  overflow: auto;
+  padding: 1.25rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+  overflow: auto;
+  background-color: white;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: center; */
+  margin: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.option {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 120px;
+  display: block;
+  margin: 10px;
+}
+
+.dashboard {
+  width: 35%;
+  overflow: auto;
+  background-color: white;
+  border-left: 1px solid grey;
+}
+.output {
+  width: 70%;
+}
+
+.sub-child {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 50px;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid blue;
+  background-color: white;
+}
+.wrdm {
+  color: blue;
+  font-size: 20px;
+}
+
+.pfizer-logo {
+  margin-left: 40px;
 }
