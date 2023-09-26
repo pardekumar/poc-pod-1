@@ -245,3 +245,16 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.icon.css-i4bv87-MuiSvgIcon-root {
 .delete-icon {
   margin-left: 10px;
 }
+.words {
+  margin-left: 1180px;
+  margin-top: 10px;
+}
+
+.footer {
+  font-weight: bold;
+  margin-left: 500px;
+  margin-top: 10px;
+}
+Card {
+  background: #f6f6f6;
+}

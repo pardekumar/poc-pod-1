@@ -30,7 +30,7 @@ function App() {
         <Header />
       </div>
 
-      <div style={{ overflow: "auto", marginTop: "10px" }}>
+      <div style={{ overflow: "auto", margin: "0 20px" }}>
         <div className="menu">
           <div className="sidebar">
             <div className="upperSide">
@@ -104,13 +104,25 @@ function App() {
             className="text-field"
           />
           <SendIcon className="sendIcon" />
-          <input
-            type="file"
-            id="docpicker"
-            accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-          />
-          <CloudUploadIcon className="cloudIcon" />
+          <span onClick={() => document.querySelector(".input-field").click()}>
+            <input
+              type="file"
+              hidden
+              id="docpicker"
+              className="input-field"
+              accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            />
+            <CloudUploadIcon className="cloudIcon" />
+          </span>
         </div>
+        <p className="words">
+          25000/ <strong>45000 words</strong>
+        </p>
+        <p className="footer">
+          ChatGPT Jan 9 version Free Research Preview. Our goal is to make AI
+          systems more natural and safe to interact with.Your feedback will help
+          us improve.
+        </p>
       </div>
     </>
   );
