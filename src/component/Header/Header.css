@@ -1,0 +1,13 @@
+.pfizer-logo {
+  cursor: pointer;
+}
+.heading-text {
+  display: flex;
+  justify-content: space-between;
+}
+.header-right {
+  display: inline-flex;
+}
+.faq {
+  margin-left: 10px;
+}
