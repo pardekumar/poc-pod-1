@@ -1,0 +1,50 @@
+.pfizer-logo {
+  cursor: pointer;
+}
+
+.box {
+  padding: 2px;
+  border: dashed;
+  width: 130%;
+  height: 100%;
+  border-radius: 6px;
+  border-color: grey;
+  border-width: thin;
+  background-color: aliceblue;
+}
+
+.content {
+  transform: translate(45%, 50%);
+}
+
+.f-10 {
+  font-size: 10px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.c-blue {
+  color: #1976d2;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+.boxContent {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.uploadButton {
+  background-color: #1976d2;
+}
+
+.upload {
+  position: absolute;
+  top: 50%;
+  bottom: 30%;
+  /* transform: translate(180%); */
+}

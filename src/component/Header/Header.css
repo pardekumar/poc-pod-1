@@ -8,6 +8,7 @@
 }
 .header-right {
   display: inline-flex;
+  color: blue;
 }
 .faq {
   margin-left: 10px;
