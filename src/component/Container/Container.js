@@ -15,8 +15,14 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import { sendMsgToOpenAI } from "../../openai";
 
 function Container() {
+  const [input, setInput] = useState("");
+  const handleSend = async () => {
+    const res = await sendMsgToOpenAI(input);
+    console.log(res);
+  };
   return (
     <>
       <div
@@ -66,17 +72,17 @@ function Container() {
                   <CardContent>Example 1</CardContent>
                 </Card>
                 <br />
-                <Card>
+                <Card className="card-example">
                   <CardContent>Example 2</CardContent>
                 </Card>
                 <br />
-                <Card>
+                <Card className="card-example">
                   <CardContent>Example 3</CardContent>
                 </Card>
               </span>
               <br />
 
-              <span className="capablities">
+              <span className="capabilities">
                 <BoltIcon />
                 <br />
                 Capabilities
@@ -84,11 +90,11 @@ function Container() {
                   <CardContent>Capability 1</CardContent>
                 </Card>
                 <br />
-                <Card>
+                <Card className="card-capability">
                   <CardContent>Capability 2</CardContent>
                 </Card>
                 <br />
-                <Card>
+                <Card className="card-capability">
                   <CardContent>Capability 3</CardContent>
                 </Card>
               </span>
@@ -96,13 +102,18 @@ function Container() {
           </div>
         </div>
         <div className="chatFooter">
-          <TextField
+          <input
             id="outlined-multiline-flexible"
             multiline
             maxRows={4}
             className="text-field"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
           />
-          <SendIcon className="sendIcon" />
+          <button onClick={handleSend}>
+            <SendIcon className="sendIcon" />
+          </button>
+
           <span onClick={() => document.querySelector(".input-field").click()}>
             <input
               type="file"

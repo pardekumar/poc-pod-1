@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Container from "./component/Container/Container";
-import UploadComponent from "./component/UploadComponent/uploadComponent";
+import UploadComponent from "./component/UploadComponent/UploadComponent";
 
 function App() {
   return (

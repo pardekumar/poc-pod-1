@@ -177,12 +177,12 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.icon.css-i4bv87-MuiSvgIcon-root {
 
 .examples {
   margin-top: 40px;
-  width: 400px;
+  width: 250px;
 }
 
-.capablities {
+.capabilities {
   margin-top: 40px;
-  width: 400px;
+  width: 250px;
 }
 
 .chat {
@@ -195,7 +195,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.icon.css-i4bv87-MuiSvgIcon-root {
 .card {
   display: flex;
   text-align: center;
-  /* position: absolute; */
+  gap: 10px;
 }
 
 .chatFooter {
@@ -210,6 +210,7 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.icon.css-i4bv87-MuiSvgIcon-root {
 .sendIcon {
   margin-left: -25px;
   margin-top: 115px;
+  cursor: pointer;
 }
 
 .MuiFormControl-root.MuiTextField-root.text-field.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
@@ -257,4 +258,14 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.icon.css-i4bv87-MuiSvgIcon-root {
 }
 Card {
   background: #f6f6f6;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.card-example.css-bhp9pd-MuiPaper-root-MuiCard-root {
+  background-color: #f2eeee;
+}
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.card-capability.css-bhp9pd-MuiPaper-root-MuiCard-root {
+  background-color: #f2eeee;
+}
+
+.cloudIcon {
+  cursor: pointer;
 }

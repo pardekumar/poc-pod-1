@@ -48,3 +48,33 @@
   bottom: 30%;
   /* transform: translate(180%); */
 }
+.attach-file {
+  background: lightgray;
+  margin-bottom: 2px;
+}
+.attach-file-icon {
+  float: right;
+}
+.next-button {
+  float: right;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.next-button.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  border-radius: 30px;
+  margin-top: 20px;
+}
+h2#modal-modal-title {
+  color: blue;
+  text-align: center;
+}
+
+.MuiBox-root.css-1wnsr1i {
+  border-radius: 25px;
+  border: none;
+}
+p#modal-modal-description {
+  border: 1px solid grey;
+}
+
+.modal-content {
+  margin-bottom: 2px;
+}
